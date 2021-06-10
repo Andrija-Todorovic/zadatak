@@ -1,0 +1,108 @@
+
+*{
+    margin: 1px;
+    padding:3px;
+    box-sizing: border-box;
+    
+}
+
+
+.navigation{
+    font-family: Lora;
+    font-size: large;
+    line-height: 27px;
+    
+}
+
+p{
+    line-height: 27px;
+    -webkit-columns: 250px 3;
+    -moz-columns: 250px 3;
+    columns: 250px 3;
+    -webkit-column-gap: 40px;
+    -moz-column-gap: 40px;
+    column-gap: 40px;
+}
+
+
+.underline:hover{
+    text-decoration: underline;
+}
+
+select{
+    border: none;
+}
+
+
+/*? HEDER ICONS */
+
+
+.container .container_sub{
+    padding: 30px;
+    display: flex;
+   
+}
+
+.row{
+    align-items: center;
+    padding-left: 100px;
+    margin-top: 100px;
+}
+.icon-card{
+    padding: 1rem;
+    text-align: center;
+    border-radius:60%;
+    width: 180px;
+    height: 170px;
+    left: 0px;
+    top: 0px;    
+
+    /* text */
+    font-family: Lora;
+    font-style: normal;
+    float: left;
+}
+
+.icon-card .container_sub {
+    visibility: hidden;
+}
+.icon-card:hover{
+    background: black;
+    color: white;
+}
+
+
+.icon-card:hover .container_sub{
+    visibility: visible;
+    background-color: #F5F5F5;
+    width: fit-content;
+    height:auto;
+    color: #000000;
+    font-size: small;
+    position: absolute;   
+    left: 0;
+    right: 0; 
+}
+
+
+
+
+/* ! RESPONSIVE ================= ! ============== */
+
+/* * XS */
+
+@media(max-width: 570px ) {
+
+    .container {
+        overflow: scroll;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        box-sizing: border-box;
+    }
+
+    
+
+}
+
+
